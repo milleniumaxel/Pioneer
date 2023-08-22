@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans 3', sans-serif;
+    padding-top:32px;
+}
+.container{
+    max-width: 1180px;
+    margin: auto;
+}
+.header{
+    margin-bottom: 80px;
+}
+.header-top, .header-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 32px;
+}
+.header-contacts{
+    display: flex;
+}
+.header-text, .header-link{
+    text-align: right;
+    display: block;
+    margin:0;
+}
+
+.header-text{
+    font-size: 14px;
+    color: var(--dark, #333);
+    font-style: normal;
+    line-height: 120%; 
+}
+.header-link, .header-button{
+    color: var(--accent, #607CE6);
+
+}
+.header-link{
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    font-weight: 600;
+}
+.header-phone{
+    margin-left: 20px;
+    min-width: 180px;
+}
+.header-divider{
+    margin: 0;
+    color:var(--gray, #888);
+    margin-bottom: 16px;
+}
+.header-button{
+    border: none;
+    background-color: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    gap:4px;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.nav{
+    display: flex;
+    gap:44px
+}
+.nav-item{
+    color: var(--dark, #333);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration: none;
+}
+/* hero */
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-title, .hero-description{
+    flex-basis: 50%;
+}
+.hero-title{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+    margin: 0;
+    margin-bottom: 32px;
+}
+.hero-description{
+    font-size: 16px;
+    line-height: 120%; 
+    max-width:379px;
+    margin:0;
+    align-self: center;
+    margin-bottom: 56px;
+}
+.hero-image{
+    flex-basis: 100%;
+    margin: 0;
+    margin-bottom: 80px;
+}
+/* about */
+.about{
+    margin: 0;
+    margin-bottom: 80px;
+}
+.h2-title{
+    color: var(--dark, #333);
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 120%; 
+    margin: 0;
+    margin-bottom: 32px;
+}
+.about-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 233px;
+    padding: 0;
+    margin-bottom: 8px;
+    
+}
+.about-description{
+    max-width: 580px;
+    width: 580;
+    flex-basis: 50%;
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--dark, #333);
+    font-size: 16px;
+    line-height: 140%; 
+
+}
+.about-image-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.about-image{
+    height: 280px;
+    width: 580px;
+    object-fit: cover;
+    flex-basis: 50%;
+    margin: 0;
+
+}
+/* products */
+.product-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px
+}
+.product-item{
+    margin: 0;
+    width: 380px;
+    height: 435px;
+    background: var(--light-gray, #F5F5F5);
+    margin-bottom: 5px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.product-item-description{
+    margin: 0;
+    color: var(--accent, #607CE6);
+    font-size: 20px;
+    line-height: 120%;
+    text-decoration: none;
+}
+.product-item-description::after{
+    margin-left: 8px;
+    content: url('/img/line-angle-right-icon\ 1.svg');
+}
+.product-item-title{
+    margin: 0;
+    color: var(--dark, #333);
+    margin-bottom: 12px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+}
+.product-item-image{
+    margin-bottom: auto;
+    max-width: 200px;
+    object-fit: cover;
+}
+/* map */
+/* news */
+.news-items{
+    display: flex;
+    justify-content: space-between;
+}
+.news-item{
+    width: 380px;
+    height: 478px;
+    background: var(--light-gray, #F5F5F5);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.news-image{
+    height: 251px;
+    width: 380px;
+}
+.description-date-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
